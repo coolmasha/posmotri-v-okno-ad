@@ -49,7 +49,6 @@ ol {
   list-style: none;
 }
 
-/* Кастомный скроллбар */
 .custom-scrollbar::-webkit-scrollbar {
   width: 4px;
 }
@@ -147,7 +146,6 @@ ol {
   cursor: pointer;
 }
 
-/* Псевдоэлемент для отображения галочки/квадрата */
 .search-form__pseudo-checkbox::after {
   content: "";
   position: absolute;
@@ -161,18 +159,15 @@ ol {
   transition: opacity 0.2s ease;
 }
 
-/* Отображение псевдоэлемента при активном чекбоксе */
 .search-form__checkbox:checked + .search-form__pseudo-checkbox::after {
   opacity: 1;
 }
 
-/* ОБВОДКА ТОЛЬКО ДЛЯ TAB-НАВИГАЦИИ */
 .search-form__label:has(.search-form__checkbox:focus-visible) {
   outline: 1px solid #fff;
   outline-offset: 1px;
 }
 
-/* Подчёркивание текста при наведении на лейбл */
 .search-form__label:hover .search-form__label-text {
   text-decoration: underline;
 }
